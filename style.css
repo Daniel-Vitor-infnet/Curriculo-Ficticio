@@ -1,0 +1,299 @@
+@font-face {
+  font-family: 'Comic-Neue-Italic';
+  src: url(Estruturas/Fontes/Comic-Neue/Base/Italic.ttf);
+}
+@font-face {
+  font-family: 'Comic-Neue-bold-Italic';
+  src: url(Estruturas/Fontes/Comic-Neue/Base/BoldItalic.ttf);
+} /* Optei por aproveitar a familia da fonte para usar o bold */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  box-sizing: border-box;
+}
+/* ...................................................Body...................................................... */
+body {
+  font-family: 'Comic-Neue-Italic', cursive, sans-serif;
+  font-size: 18px; 
+}
+/* ...................................................header...................................................... */
+header {
+  background-color: #290187;
+  color: white;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;     /* Sou rebelde prefiro "text-align: center;", só usei "align-items:" pq pediu */
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+h1 {
+  font-family: 'Comic-Neue-bold-Italic', cursive, sans-serif;  /* Optei por aproveitar a familia da fonte para usar o bold */
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+
+/* ...................................................main...................................................... */
+main {
+  max-width: 930px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 130px; 
+}
+
+main h2 {
+  font-family: 'Comic-Neue-bold-Italic', cursive, sans-serif;    /* Optei por aproveitar a familia da fonte para usar o bold */
+  font-size: 29px;
+  color: #290187;
+  margin-top: 40px;
+  margin-bottom: 15px; 
+}
+
+#PrimeiroTopico {
+  margin-top: 15px;
+}
+
+.h3Instituições {
+  margin-bottom: 10px;
+}
+
+.LinkInstituições {
+  font-family: 'Comic-Neue-bold-Italic', cursive, sans-serif;  /* Optei por aproveitar a familia da fonte para usar o bold */
+  font-size: 23px;
+  text-decoration: none;
+  color: #4d64ff;
+ 
+}
+.LinkInstituições:visited {
+  color: #4d64ff;
+}
+
+#Infnet {
+  border-top: 2px solid;
+  padding-top: 30px;
+  margin-top: 20px;
+}
+
+/* ...................................................Lista De Idiomas...................................................... */
+.ListaIdiomas{
+  margin-left: 32px;
+  font-size: 20px;
+}
+
+.ListaIdiomas li{
+  border-radius: 10px; 
+  margin: 5px 0; 
+  padding: 5px 10px; 
+  background-color: #f0f0f0; 
+}
+
+.ListaIdiomas #Português {
+list-style-image: url('Estruturas/Icones/Bandeiras/Base/Brasil.png');
+padding-left: 10px;
+}
+
+.ListaIdiomas #Inglês {
+  list-style-image: url('Estruturas/Icones/Bandeiras/Base/Estados-Unidos.png');
+  padding-left: 10px;
+}
+
+.ListaIdiomas #Espanhol {
+  list-style-image: url('Estruturas/Icones/Bandeiras/Base/Espanha.png');
+  padding-left: 10px;
+}
+
+.ListaIdiomas #Latim {
+  list-style-image: url('Estruturas/Icones/Bandeiras/Base/Italia.png');
+  padding-left: 10px;
+}
+
+/* ...................................................Lista De Linguagem De Programação...................................................... */
+.ListaLinguagem{
+  margin-left: 32px;
+  font-size: 20px;
+}
+
+.ListaLinguagem li{
+  border-radius: 10px; 
+  margin: 5px 0; 
+  padding: 5px 10px; 
+  background-color: #f0f0f0; 
+}
+
+.ListaLinguagem #HTML {
+  list-style-image: url('Estruturas/Icones/Linguagem-De-Programação/Base/HTML.png');
+  }
+  
+  .ListaLinguagem #CSS {
+    list-style-image: url('Estruturas/Icones/Linguagem-De-Programação/Base/CSS.png');
+  }
+  
+  .ListaLinguagem #JavaScript {
+    list-style-image: url('Estruturas/Icones/Linguagem-De-Programação/Base/JavaScript.png');
+  }
+  
+  .ListaLinguagem #SQL {
+    list-style-image: url('Estruturas/Icones/Linguagem-De-Programação/Base/SQL.png');
+  }
+
+/* ...................................................Tabela Projetos...................................................... */
+
+#TabelaProjetos {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#TabelaProjetos, td, #TabelaProjetos th {
+  border: 2px solid ;
+}
+
+#TabelaProjetos th {
+  font-family: 'Comic-Neue-bold-Italic', cursive, sans-serif;  /* Optei por aproveitar a familia da fonte para usar o bold */
+  font-size: 23px;
+  padding: 14px;
+}
+
+#TabelaProjetos td {
+  padding: 8px;
+}
+
+#TabelaProjetos .Td3 {
+  text-align: center;
+}
+
+#TabelaProjetos th {
+  background-color: #9bc2e6;
+}
+
+#TabelaProjetos tr {
+  background-color: #98fb98;
+}
+
+#TabelaProjetos tr:nth-child(even) {
+  background-color: #faa866;
+}
+
+#TabelaProjetos tr:hover {
+  background-color: white;
+}
+
+#TabelaProjetos .Td1 {
+  font-family: 'Comic-Neue-bold-Italic', cursive, sans-serif;  /* Optei por aproveitar a familia da fonte para usar o bold */
+  font-size: 18px;
+}
+
+.LinkProjeto {
+  color: #095df6;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;     /* Sou rebelde prefiro "text-align: center;", só usei "align-items:" pq pediu */
+}
+
+#TabelaProjetos .Tr3 .Td1 {
+  text-align: center;
+}
+
+.LinkProjeto:visited {
+  color: #095df6;
+}
+
+.ProjetoJavaScript {
+  height: 60px; 
+}
+
+.ProjetoSQL {
+  height: 60px; 
+}
+
+/* ...................................................Tabela Certificado...................................................... */
+
+#TabelaCertificados {
+  width: 100%;
+  border: 2px solid #000; 
+  border-radius: 10px; 
+}
+
+#TabelaCertificados td, #TabelaCertificados th {
+  border-radius: 10px; 
+  border: 2px solid black;
+}
+
+#TabelaCertificados th {
+  font-family: 'Comic-Neue-bold-Italic', cursive, sans-serif;  /* Optei por aproveitar a familia da fonte para usar o bold */
+  font-size: 23px;
+  padding: 14px;
+}
+
+#TabelaCertificados td {
+  padding: 8px;
+  text-align: center;
+}
+
+#TabelaCertificados th {
+  background-color: #bababa;
+}
+
+#TabelaCertificados tr {
+  background-color: #ffff8f;
+}
+
+#TabelaCertificados tr:nth-child(even) {
+  background-color: #ff94ff;
+}
+
+#TabelaCertificados tr:hover {
+  background-color: #2dfb23 !important;
+}
+
+#TabelaCertificados .Td1, #TabelaCertificados .Td2{
+  font-family: 'Comic-Neue-bold-Italic', cursive, sans-serif;  /* Optei por aproveitar a familia da fonte para usar o bold */
+  font-size: 18px;
+}
+
+.LinkCertificado {
+  color: #095df6;
+  text-decoration: none;
+}
+
+
+
+.LinkCertificado:visited {
+  color: #095df6;
+}
+
+
+.LinkLeveDuca {
+  color: #ff4b38;
+  text-decoration: none;
+}
+
+
+
+.LinkLeveDuca:visited {
+  color: #ff4b38;
+}
+
+
+/* ...................................................Footer...................................................... */
+footer {
+  background-color: #290187;
+  color: white;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;     /* Sou rebelde prefiro "text-align: center;", só usei "align-items:" pq pediu */
+  padding: 20px;
+}
+
+
